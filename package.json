@@ -1,0 +1,66 @@
+{
+  "name": "adrianovi",
+  "version": "0.1.2",
+  "description": "Mi stack de dependencias frontend/backend: TanStack Query, Axios, React Hook Form, Zod, Zustand, Sonner y más.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "update": "bash scripts/update-deps.sh",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "tanstack-query",
+    "axios",
+    "react-hook-form",
+    "zod",
+    "zustand",
+    "sonner"
+  ],
+  "author": "adrianovi",
+  "license": "MIT",
+  "dependencies": {
+    "@hookform/resolvers": "^3.10.0",
+    "@tanstack/react-query": "^5.74.4",
+    "@tanstack/react-query-devtools": "^5.96.2",
+    "axios": "^1.8.4",
+    "i18n-js": "^4.5.3",
+    "react-hook-form": "^7.56.0",
+    "react-hot-toast": "^2.5.2",
+    "sonner": "^2.0.7",
+    "zod": "^3.24.2",
+    "zustand": "^5.0.3"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}
