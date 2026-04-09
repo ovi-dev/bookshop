@@ -10,7 +10,7 @@ const RESET = "\x1b[0m";
 
 const cwd = process.cwd();
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const templatesDir = path.resolve(__dirname, "../../templates");
+const templatesDir = path.resolve(__dirname, "../../../templates");
 
 function copyFile(from: string, to: string) {
   const fullTo = path.join(cwd, to);

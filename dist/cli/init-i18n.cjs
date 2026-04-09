@@ -17,7 +17,7 @@ var CYAN = "\x1B[36m";
 var RESET = "\x1B[0m";
 var cwd = process.cwd();
 var __dirname$1 = path__default.default.dirname(url.fileURLToPath((typeof document === 'undefined' ? require('u' + 'rl').pathToFileURL(__filename).href : (_documentCurrentScript && _documentCurrentScript.tagName.toUpperCase() === 'SCRIPT' && _documentCurrentScript.src || new URL('init-i18n.cjs', document.baseURI).href))));
-var templatesDir = path__default.default.resolve(__dirname$1, "../../templates");
+var templatesDir = path__default.default.resolve(__dirname$1, "../../../templates");
 function copyFile(from, to) {
   const fullTo = path__default.default.join(cwd, to);
   fs__default.default.mkdirSync(path__default.default.dirname(fullTo), { recursive: true });

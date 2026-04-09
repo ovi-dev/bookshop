@@ -9,7 +9,7 @@ var CYAN = "\x1B[36m";
 var RESET = "\x1B[0m";
 var cwd = process.cwd();
 var __dirname$1 = path.dirname(fileURLToPath(import.meta.url));
-var templatesDir = path.resolve(__dirname$1, "../../templates");
+var templatesDir = path.resolve(__dirname$1, "../../../templates");
 function copyFile(from, to) {
   const fullTo = path.join(cwd, to);
   fs.mkdirSync(path.dirname(fullTo), { recursive: true });
